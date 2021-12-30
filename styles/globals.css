@@ -2,20 +2,23 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: var(--font-primary);
-  background-color: var(--clr-bg-white);
+  background-color: var(--clr-white);
   color: var(--clr-primary);
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 a {
   color: var(--clr-primary);
   text-decoration: none;
+  font-weight: 500;
 }
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* ====== GLOBAL VARIABLE ======= */
@@ -23,9 +26,11 @@ a {
   --clr-primary: #171010;
   --clr-secondary-1: #2b2b2b;
   --clr-secondary-2: #362222;
-  --clr-bg-white: #ffffff;
+  --clr-secondary-3: #423f3e;
+  --clr-white: #ffffff;
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Playfair Display", serif;
+  --transition: all linear 0.3s;
 }
 
 /* ====== GLOBAL STYLE ======== */
@@ -53,5 +58,43 @@ h3 {
 
 p {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+ul,
+il {
+  list-style: none;
+}
+
+span {
+  font-size: 12px;
+}
+
+.btn {
+  height: 35px;
+  width: 135px;
+  border: none;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+
+.btn-light {
+  background-color: var(--clr-secondary-3);
+  color: var(--clr-white);
+}
+
+.btn-dark:hover,
+.btn-light:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-primary);
+  border: var(--clr-primary) solid 1px;
 }
