@@ -30,6 +30,10 @@
   align-items: center;
 }
 
+.logo h3 {
+  cursor: pointer;
+}
+
 .toggle {
   flex: 1;
   display: flex;

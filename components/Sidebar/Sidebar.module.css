@@ -8,7 +8,6 @@
 }
 
 .sidebarHide {
-  z-index: -99;
   -webkit-animation: flip-out-hor-top 0.45s
     cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: flip-out-hor-top 0.45s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -82,7 +81,7 @@
 @media screen and (min-width: 900px) {
   .sidebar {
     display: none;
-    z-index: -1;
+    z-index: -99;
   }
 }
 
@@ -112,6 +111,10 @@
   color: var(--clr-white);
   display: flex;
   align-items: center;
+}
+
+.logo h3 {
+  cursor: pointer;
 }
 
 .toggle {

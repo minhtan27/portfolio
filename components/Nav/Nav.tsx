@@ -15,7 +15,9 @@ const Nav: FC<NavProps> = () => {
       <div className={style.navCenter}>
         <div className={style.logoContainer}>
           <div className={style.logo}>
-            <h3>Tanminh.</h3>
+            <Link href="/">
+              <h3>Tanminh.</h3>
+            </Link>
           </div>
           <div className={style.toggle}>
             <Image src={navToggle} onClick={toggleSidebar} />
