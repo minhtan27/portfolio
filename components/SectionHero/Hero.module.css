@@ -1,0 +1,76 @@
+.heroContainer {
+  width: 90%;
+  margin: 0px auto 0px auto;
+  position: relative;
+}
+
+.heroBar {
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--clr-primary);
+}
+
+.heroInfo {
+  margin-bottom: 40px;
+}
+
+.heroInfo h4,
+.heroInfo p {
+  color: var(----clr-secondary-1);
+  opacity: 0.75;
+}
+
+.btnContainer {
+  margin-top: 40px;
+}
+
+.btnContainer button {
+  margin-right: 20px;
+}
+
+.imageContainer {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    width: 100vw;
+    height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 40px;
+    height: 80%;
+    width: 80%;
+    border-left: var(--clr-primary) solid 1px;
+  }
+
+  .heroInfo {
+    padding: 40px;
+  }
+
+  .imageContainer {
+    width: 550px;
+    height: 550px;
+  }
+
+  .heroBar {
+    display: none;
+  }
+  .btnContainer button {
+    margin-bottom: 20px;
+  }
+}
