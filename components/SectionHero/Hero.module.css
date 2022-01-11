@@ -42,12 +42,12 @@
 @media screen and (min-width: 900px) {
   .hero {
     width: 100vw;
-    height: calc(100vh - 160px);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .heroContainer {
+    margin: 120px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

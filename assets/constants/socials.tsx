@@ -1,15 +1,13 @@
 import { ReactElement } from "react";
 import Image, { ImageProps } from "next/image";
-import facebook from "../images/facebook.svg";
-import git from "../images/git.svg";
-import linkedin from "../images/linkedin.svg";
-import youtube from "../images/youtube.svg";
+import { BsFacebook, BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
+import { IconType } from "react-icons/lib";
 
 export type Social = {
   id: number;
   title: string;
   url: string;
-  icon: ReactElement<ImageProps>;
+  icon: ReactElement<IconType>;
 };
 
 export const socials: Social[] = [
@@ -17,24 +15,24 @@ export const socials: Social[] = [
     id: 1,
     title: "facebook",
     url: "https://www.facebook.com/tanminh.27/",
-    icon: <Image src={facebook} />,
+    icon: <BsFacebook />,
   },
   {
     id: 2,
     title: "git",
     url: "https://github.com/minhtan27",
-    icon: <Image src={git} />,
+    icon: <BsGithub />,
   },
   {
     id: 3,
     title: "linkedin",
     url: "https://www.linkedin.com/in/tan-minh-450962182/",
-    icon: <Image src={linkedin} />,
+    icon: <BsLinkedin />,
   },
   {
     id: 4,
     title: "youtube",
     url: "",
-    icon: <Image src={youtube} />,
+    icon: <BsYoutube />,
   },
 ];

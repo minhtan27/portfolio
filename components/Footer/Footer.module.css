@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  height: 50px;
+  border-top: var(--clr-white) 1px solid;
+  display: flex;
+}
+
+.text {
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}

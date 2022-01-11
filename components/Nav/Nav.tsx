@@ -2,9 +2,8 @@ import { FC } from "react";
 import style from "./Nav.module.css";
 import { NavLink, links } from "../../assets/constants/links";
 import Link from "next/link";
-import Image from "next/image";
-import navToggle from "../../assets/images/navToggle.svg";
 import { useAppContext } from "../../contexts";
+import { FaBars } from "react-icons/fa";
 
 interface NavProps {}
 
@@ -20,7 +19,7 @@ const Nav: FC<NavProps> = () => {
             </Link>
           </div>
           <div className={style.toggle}>
-            <Image src={navToggle} onClick={toggleSidebar} />
+            <FaBars onClick={toggleSidebar} />
           </div>
         </div>
         <ul className={style.navLinks}>

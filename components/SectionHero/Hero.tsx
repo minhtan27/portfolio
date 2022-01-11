@@ -18,7 +18,7 @@ const Hero: FC<HeroProps> = () => {
               my projects
             </button>
             <button type="button" className="btn btn-dark">
-              my projects
+              resume
             </button>
           </div>
         </div>

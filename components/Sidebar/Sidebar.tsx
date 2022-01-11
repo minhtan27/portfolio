@@ -1,11 +1,10 @@
 import { FC } from "react";
 import style from "./Sidebar.module.css";
-import navClose from "../../assets/images/navToggleClose.svg";
-import Image from "next/image";
 import { links, NavLink } from "../../assets/constants/links";
 import { Social, socials } from "../../assets/constants/socials";
 import Link from "next/link";
 import { useAppContext } from "../../contexts";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 interface SidebarProps {}
 
@@ -25,7 +24,7 @@ const Sidebar: FC<SidebarProps> = () => {
             </Link>
           </div>
           <div className={style.toggle}>
-            <Image src={navClose} onClick={toggleSidebar} />
+            <IoMdCloseCircleOutline onClick={toggleSidebar} />
           </div>
         </div>
       </div>
